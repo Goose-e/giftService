@@ -1,6 +1,6 @@
 package curse.giftservice.httpResponse;
 
-import static curse.auth.constants.SysConst.EMPTY_STRING;
+import static curse.giftservice.constants.SysConst.EMPTY_STRING;
 
 public class DefaultHttpResponseBody<T extends ResponseDto> extends HttpResponseBody<T> {
     public DefaultHttpResponseBody() {

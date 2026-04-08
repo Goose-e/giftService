@@ -7,9 +7,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static curse.auth.constants.SysConst.INVALID_ENTITY_ATTR;
-import static curse.auth.constants.SysConst.OC_OK;
-import static curse.auth.constants.SysConst.STRING_NULL;
+import static curse.giftservice.constants.SysConst.INVALID_ENTITY_ATTR;
+import static curse.giftservice.constants.SysConst.OC_OK;
+import static curse.giftservice.constants.SysConst.STRING_NULL;
 
 public abstract class HttpResponseBody<T extends ResponseDto> implements Serializable {
 
