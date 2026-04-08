@@ -34,8 +34,6 @@ public class WebSecurityConfig {
                 .cors(Customizer.withDefaults())
                 .exceptionHandling(exceptionHandling -> exceptionHandling.authenticationEntryPoint(entryPoint))
                 .authorizeHttpRequests(requests -> requests
-                        .requestMatchers("/auth/register", "/auth/login", "/auth/refresh").permitAll()
-                        .requestMatchers("/friends/**").authenticated()
                         .requestMatchers("/.well-known/**", "/oauth2/**").permitAll()
                         .anyRequest().authenticated())
                 .oauth2ResourceServer(oauth2 -> oauth2

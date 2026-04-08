@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -23,7 +23,7 @@ public class VictimEntity {
     private UserEntity user;
 
     private String gender;
-    private LocalDateTime birthdate;
+    private LocalDate birthdate;
     private String country;
     private String city;
 
